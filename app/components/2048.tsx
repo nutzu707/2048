@@ -349,10 +349,8 @@ export default function Hello2048() {
     setIsInitialized(false);
   }
 
-  // --- Responsive grid width ---
-  const gridWidth = Math.min(6 * gridSize, 32); // max 32rem
+  const gridWidth = Math.min(6 * gridSize, 32);
 
-  // --- Keycap click handlers ---
   const keycapHandlers = {
     W: () => handleMove("up"),
     A: () => handleMove("left"),
@@ -421,8 +419,6 @@ export default function Hello2048() {
             : ""}
         </div>
       </Modal>
-
-
     </div>
   );
 }
